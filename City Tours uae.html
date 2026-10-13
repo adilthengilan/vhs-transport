@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>City Tours | VHS Passengers Transport, Abu Dhabi</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--ink:#0f1215;--blue:#1b52a8;--yellow:#fae00a;--mute:#5d646d;--line:#dde1e6;--card:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:110px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Manrope,"DM Sans",system-ui,sans-serif;letter-spacing:-.045em;line-height:.98;margin:0;font-weight:800}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.blue{color:var(--blue)}
+
+nav{position:sticky;top:calc(14px + env(safe-area-inset-top,0px));z-index:10;margin:14px auto 0;max-width:1180px;width:calc(100% - 32px);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border-radius:22px;box-shadow:0 8px 30px rgba(15,18,21,.08)}
+.links{display:flex;gap:26px;font-size:14px;font-weight:500}
+.btns{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;font-size:14px;border:0;cursor:pointer}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.yellow{background:var(--yellow);color:var(--ink)}
+.btn:hover{filter:brightness(1.08)}
+
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:70px 0 90px}
+.hero h1{font-size:clamp(52px,8vw,112px);margin:18px 0 26px}
+.hero p{max-width:440px;color:var(--mute);font-size:18px;margin:0 0 32px}
+.hero .row{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.visual{position:relative;min-height:440px}
+.sun{position:absolute;right:14%;top:0;width:260px;height:260px;border-radius:50%;background:var(--yellow)}
+.panel{position:absolute;inset:40px 0 40px 40px;border-radius:28px 28px 28px 90px;overflow:hidden;background:#13171c}
+.panel img{width:100%;height:100%;object-fit:cover;object-position:35% 50%;display:block}
+.stat{position:absolute;left:0;bottom:0;z-index:2;background:rgba(255,255,255,.94);border-radius:22px;padding:22px 26px;box-shadow:0 18px 40px rgba(15,18,21,.18);width:min(340px,100%)}
+.stat h3{font-size:24px;margin:6px 0 4px;letter-spacing:-.03em;line-height:1.1}
+.stat p{margin:0 0 14px;font-size:13px;color:var(--mute)}
+.stat dl{display:flex;gap:26px;margin:0;border-top:1px solid var(--line);padding-top:12px}
+.stat dt{font:800 17px Manrope,sans-serif}
+.stat dd{margin:0;font-size:11px;color:var(--mute)}
+
+section{padding:90px 0}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:start}
+.about h2,.feat h2{font-size:clamp(40px,6vw,78px)}
+.about p{color:var(--mute);margin:0 0 18px}
+.about a.link{font-weight:700;border-bottom:2px solid var(--ink);padding-bottom:2px}
+
+.feat{background:#eceef1}
+.feat .head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:50px}
+.feat .head p{max-width:340px;margin:0;color:var(--mute)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.col{padding:34px 30px 10px 0}
+.col+.col{padding-left:30px;border-left:1px solid var(--line)}
+.dot{width:60px;height:60px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;margin-bottom:46px}
+.dot svg{width:26px;height:26px}
+.col h3{font-size:30px;line-height:1.02;margin-bottom:14px}
+.col p{margin:0;color:var(--mute);font-size:15px}
+
+.vision{background:var(--yellow)}
+.vision .cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.vision .c{background:#fffbd6;border-radius:28px;padding:36px}
+.vision h3{font-size:34px;margin-bottom:14px}
+.vision p{margin:0;color:#3d3f2a}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact h2{font-size:clamp(40px,6vw,78px);margin:16px 0 20px}
+.contact>div>p{color:var(--mute);max-width:420px}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.list a,.list div{display:block;padding:18px 0;border-bottom:1px solid var(--line);font-weight:700;overflow-wrap:anywhere}
+.list small{display:block;font-weight:400;font-size:12px;color:var(--mute)}
+.list .full{grid-column:1/-1}
+.list .addr{font-weight:400;color:var(--mute);font-size:14px}
+.contact .btn{margin-top:28px}
+
+footer{background:#0f1215;color:#fff;padding:80px 0 30px}
+footer .top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+footer h2{font-size:clamp(38px,5vw,64px)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14px}
+footer .bot{margin-top:60px;padding-top:22px;border-top:1px solid #262b31;display:flex;justify-content:space-between;font-size:12px;color:#8b929a;flex-wrap:wrap;gap:10px}
+.brand{display:inline-flex;align-items:center}.brand img{height:44px;width:auto;display:block}.brand.chip{background:#fff;border-radius:16px;padding:8px 14px;align-self:flex-start}.brand.chip img{height:42px}
+
+.wa{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:20;width:52px;height:52px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font:800 13px Manrope,sans-serif;box-shadow:0 8px 24px rgba(15,18,21,.25)}
+
+@media(max-width:900px){
+.links{display:none}
+.hero,.about,.contact{grid-template-columns:1fr}
+.visual{min-height:380px}
+.cols,.vision .cards{grid-template-columns:1fr}
+.col+.col{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+.btns .btn.dark{display:none}
+}
+@media(max-width:520px){.list{grid-template-columns:1fr}.hero{padding-top:40px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="Main">
+  <a class="brand" href="index.html"><img src="assets/vhs-logo.png" alt="VHS Transport"></a>
+  <div class="links">
+    <a href="index.html#about">About</a><a href="#features">Tours</a><a href="#vision">Vision &amp; Mission</a><a href="#contact">Contact</a>
+  </div>
+  <div class="btns">
+    <a class="btn dark" href="#contact">Plan a tour &#8599;</a>
+    <a class="btn yellow" href="tel:+97124403060">Call us &#8599;</a>
+  </div>
+</nav>
+
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <div class="eyebrow">VHS Passengers Transport &middot; Abu Dhabi, UAE</div>
+    <h1>City<br>Tours.<br><span class="blue">Discover Abu Dhabi.</span></h1>
+    <p>Comfortable sightseeing tours around Abu Dhabi and the UAE, planned around your group and your schedule.</p>
+    <div class="row">
+      <a class="btn yellow" href="#contact">Plan a tour &#8599;</a>
+      <a href="#features" style="font-weight:700;font-size:14px">See how it works &#8595;</a>
+    </div>
+  </div>
+  <div class="visual">
+    <div class="sun"></div>
+    <div class="panel"><img src="assets/vehicle-4.jpeg alt="Rear seats of a VHS passenger sedan with tan leather interior"></div>
+    <div class="stat">
+      <div class="eyebrow" style="font-size:10px">VHS Transport</div>
+      <h3>See more, stress less</h3>
+      <p>Experienced drivers and comfortable vehicles for every kind of tour.</p>
+      <dl><div><dt>24/7</dt><dd>Operations</dd></div><div><dt>GPS</dt><dd>Reporting</dd></div><div><dt>UAE</dt><dd>Coverage</dd></div></dl>
+    </div>
+  </div>
+</div>
+
+<section id="about"><div class="wrap about">
+  <div>
+    <div class="eyebrow" style="margin-bottom:22px">01 / City tours</div>
+    <h2>Explore the city <span class="blue">at your own pace.</span></h2>
+  </div>
+  <div>
+    <p>From landmarks and waterfronts to shopping and day trips, we arrange tours that suit your visitors, whether it is a family, a corporate group or a delegation.</p>
+    <p>Tell us the places you would like to see and how much time you have, and we will plan the route, vehicle and timings for a relaxed day out.</p>
+    <a class="link" href="#contact">Talk to VHS &#8599;</a>
+  </div>
+</div></section>
+
+<section id="features" class="feat"><div class="wrap">
+  <div class="head">
+    <h2>Tour<br><span class="blue">options.</span></h2>
+    <p>Flexible tours built around the places your guests want to see.</p>
+  </div>
+  <div class="cols">
+    <div class="col">
+      <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#0f1215" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 6h6a3 3 0 010 6H10a3 3 0 000 6h6"/></svg></div>
+      <h3>Flexible<br>Itineraries</h3>
+      <p>Half-day, full-day or custom routes, planned around your group and interests.</p>
+    </div>
+    <div class="col">
+      <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#0f1215" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16V11l2-5h10l2 5v5"/><path d="M3 16h18v3H3z"/><circle cx="7.5" cy="16" r=".6"/><circle cx="16.5" cy="16" r=".6"/></svg></div>
+      <h3>Comfortable<br>Vehicles</h3>
+      <p>Air-conditioned cars, vans and buses to match your group size.</p>
+    </div>
+    <div class="col">
+      <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#0f1215" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 4-7 8-7s7 2 8 7"/></svg></div>
+      <h3>Experienced<br>Drivers</h3>
+      <p>Courteous drivers who know the city and keep your day on schedule.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="vision" class="vision"><div class="wrap">
+  <div class="eyebrow" style="color:var(--ink)">Vision &amp; Mission</div>
+  <div class="cards">
+    <div class="c"><h3>Make every trip memorable.</h3><p>We want visitors to enjoy the UAE comfortably, with nothing to worry about between one stop and the next.</p></div>
+    <div class="c"><h3>Personal, flexible service.</h3><p>A disciplined transportation partner that adapts to your plans, with punctual drivers and clean, well-kept vehicles.</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <div>
+    <div class="eyebrow">02 / Contact</div>
+    <h2>Plan your <span class="blue">tour.</span></h2>
+    <p>Tell us your group size, dates and the places you want to visit, and our team will put together the right plan.</p>
+    <a class="btn yellow" href="mailto:info@vhstransport.com">Send an enquiry &#8599;</a>
+  </div>
+  <div class="list">
+    <a href="tel:+97124403060">+971 2 440 3060<small>Office</small></a>
+    <a href="tel:+971563434546">+971 56 343 4546<small>Mobile</small></a>
+    <a href="tel:+971581073803">+971 58 107 3803<small>Mobile</small></a>
+    <a href="mailto:info@vhstransport.com">info@vhstransport.com<small>Email</small></a>
+    <a class="full" href="https://www.vhstransport.com">www.vhstransport.com<small>Website</small></a>
+    <div class="full addr">LLJ Business Center, Office #113 and #114, Al Jazira Muroor Rd, Abu Dhabi, UAE</div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="top">
+    <a class="brand chip" href="#top"><img src="assets/vhs-logo.png" alt="VHS Transport"></a>
+    <h2>Your journey.<br><span style="color:#4a86e0">Our responsibility.</span></h2>
+    <ul><li><a href="#about">About</a></li><li><a href="#features">Tours</a></li><li><a href="#vision">Vision &amp; Mission</a></li><li><a href="#contact">Contact</a></li></ul>
+  </div>
+  <div class="bot"><span>&copy; 2026 VHS Passengers Transport. All Rights Reserved.</span><span>Abu Dhabi &middot; UAE</span></div>
+</div></footer>
+
+<a class="wa" href="https://wa.me/971563434546" aria-label="WhatsApp">WA</a>
+</body>
+</html>

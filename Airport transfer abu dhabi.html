@@ -24,11 +24,12 @@
 <meta property="og:image:height" content="700">
 <meta property="og:image:alt" content="VHS Passengers Transport sedan for airport transfer in Abu Dhabi">
 <meta property="og:locale" content="en_AE">
-<meta property="article:modified_time" content="2026-11-13T00:00:00+04:00">
+<meta property="article:modified_time" content="2026-11-27T00:00:00+04:00">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Abu Dhabi Airport Transfer AUH | 24/7 Pick-up | VHS Transport">
 <meta name="twitter:description" content="24/7 airport pick-up and drop-off in Abu Dhabi with meet and greet and flight-timed service.">
 <meta name="twitter:image" content="https://www.vhstransport.com/assets/vehicle-3.jpeg">
+<meta name="twitter:image:alt" content="VHS Passengers Transport sedan for airport transfer in Abu Dhabi">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +49,9 @@
       "telephone": "+97124403060",
       "email": "info@vhstransport.com",
       "image": "https://www.vhstransport.com/assets/vehicle-3.jpeg",
-      "logo": "https://www.vhstransport.com/assets/vhs-logo.png",
+      "logo": {"@type": "ImageObject", "url": "https://www.vhstransport.com/assets/vhs-logo.png"},
+      "slogan": "Your journey. Our responsibility.",
+      "knowsLanguage": ["en", "ar"],
       "priceRange": "$$",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -73,6 +76,14 @@
       ]
     },
     {
+      "@type": "WebSite",
+      "@id": "https://www.vhstransport.com/#website",
+      "url": "https://www.vhstransport.com/",
+      "name": "VHS Passengers Transport",
+      "publisher": {"@id": "https://www.vhstransport.com/#org"},
+      "inLanguage": "en-AE"
+    },
+    {
       "@type": "Airport",
       "@id": "https://www.vhstransport.com/airport-transfer.html#auh",
       "name": "Zayed International Airport",
@@ -86,24 +97,29 @@
       "@id": "https://www.vhstransport.com/airport-transfer.html#service",
       "name": "Airport Transfer Service in Abu Dhabi and the UAE",
       "serviceType": "Airport transfer",
+      "url": "https://www.vhstransport.com/airport-transfer.html",
       "provider": {"@id": "https://www.vhstransport.com/#org"},
       "areaServed": [
         {"@type": "City", "name": "Abu Dhabi"},
         {"@type": "City", "name": "Al Jazira"},
         {"@type": "Country", "name": "United Arab Emirates"}
       ],
+      "availableChannel": {"@type": "ServiceChannel", "serviceUrl": "https://www.vhstransport.com/airport-transfer.html#contact", "servicePhone": {"@type": "ContactPoint", "telephone": "+97124403060"}},
       "description": "24/7 pre-booked airport pick-up and drop-off at Zayed International Airport (AUH), with meet and greet, flight-based timing and door-to-door service."
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.vhstransport.com/airport-transfer.html#faq",
       "mainEntity": [
         {"@type": "Question", "name": "Is there a 24-hour airport transfer in Abu Dhabi?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. VHS Passengers Transport operates 24 hours a day, 7 days a week, so early-morning departures and late-night arrivals can be arranged."}},
         {"@type": "Question", "name": "Which airport do you serve in Abu Dhabi?", "acceptedAnswer": {"@type": "Answer", "text": "We provide pick-up and drop-off at Zayed International Airport (AUH), formerly Abu Dhabi International Airport. For other UAE airports, contact our team to confirm."}},
         {"@type": "Question", "name": "How do I book an airport transfer?", "acceptedAnswer": {"@type": "Answer", "text": "Send your flight number, travel date, pick-up or drop-off address, number of passengers and luggage by phone at +971 2 440 3060, on WhatsApp at +971 56 343 4546, or by email at info@vhstransport.com. Our team confirms the vehicle, driver and price before the trip."}},
         {"@type": "Question", "name": "Is there a meet and greet service on arrival?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A professional driver meets your passengers at Zayed International Airport and helps them settle into the vehicle."}},
+        {"@type": "Question", "name": "Is the airport transfer door to door?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Transfers run directly between Zayed International Airport and your home, office, hotel or work site in Abu Dhabi."}},
         {"@type": "Question", "name": "How is the pick-up time decided?", "acceptedAnswer": {"@type": "Answer", "text": "The pick-up is planned around the flight details you share, so the driver is on time for departures and ready for arrivals."}},
         {"@type": "Question", "name": "How much does an airport transfer in Abu Dhabi cost?", "acceptedAnswer": {"@type": "Answer", "text": "The rate depends on the vehicle type, the route and the number of passengers. Our team confirms the price before the trip."}},
         {"@type": "Question", "name": "Can you transfer groups, staff or families?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We transfer individual passengers as well as groups travelling together, including company staff, guests and families."}},
+        {"@type": "Question", "name": "Can I book a bus for a large group airport transfer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. For larger groups, VHS provides luxury bus rental for travel with professional drivers and GPS-tracked vehicles, including airport trips. Share your flight details and group size and the team will plan it."}},
         {"@type": "Question", "name": "Which areas in Abu Dhabi do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "We provide airport pick-up and drop-off across Abu Dhabi, including Al Jazira, the city centre, the islands and surrounding districts. For other UAE locations, contact our team to confirm."}},
         {"@type": "Question", "name": "How far in advance should I book?", "acceptedAnswer": {"@type": "Answer", "text": "Book in advance so the right vehicle and driver are reserved. For same-day requests, call our office and we will confirm availability."}}
       ]
@@ -122,13 +138,14 @@
       "url": "https://www.vhstransport.com/airport-transfer.html",
       "name": "Abu Dhabi Airport Transfer AUH | 24/7 Pick-up | VHS Transport",
       "inLanguage": "en-AE",
-      "isPartOf": {"@id": "https://www.vhstransport.com/#org"},
+      "isPartOf": {"@id": "https://www.vhstransport.com/#website"},
       "about": {"@id": "https://www.vhstransport.com/airport-transfer.html#service"},
       "mentions": {"@id": "https://www.vhstransport.com/airport-transfer.html#auh"},
+      "mainEntity": {"@id": "https://www.vhstransport.com/airport-transfer.html#faq"},
       "primaryImageOfPage": {"@type": "ImageObject", "url": "https://www.vhstransport.com/assets/vehicle-3.jpeg", "width": 900, "height": 700},
       "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["#quick-answer", "#facts"]},
       "datePublished": "2026-10-17",
-      "dateModified": "2026-11-13",
+      "dateModified": "2026-11-27",
       "breadcrumb": {"@id": "https://www.vhstransport.com/airport-transfer.html#breadcrumb"}
     }
   ]
@@ -141,6 +158,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "DM Sans",
 img{max-width:100%;height:auto}
 h1,h2,h3{font-family:Manrope,"DM Sans",system-ui,sans-serif;letter-spacing:-.045em;line-height:.98;margin:0;font-weight:800}
 a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--yellow);padding:10px 16px;z-index:30;font-weight:700}.skip:focus{left:12px;top:12px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);line-height:1.4}.blue{color:var(--blue)}
 .topnav{position:sticky;top:calc(14px + env(safe-area-inset-top,0px));z-index:10;margin:14px auto 0;max-width:1180px;width:calc(100% - 32px);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border-radius:22px;box-shadow:0 8px 30px rgba(15,18,21,.08)}
 .links{display:flex;gap:26px;font-size:14px;font-weight:500}.btns{display:flex;gap:10px}
@@ -186,6 +204,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14p
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
 </head>
 <body>
+<a class="skip" href="#top">Skip to main content</a>
 
 <nav class="topnav" aria-label="Main">
   <a class="brand" href="/"><img src="assets/vhs-logo.png" width="150" height="44" alt="VHS Passengers Transport"></a>
@@ -205,7 +224,7 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14p
 
 <main id="top">
 <div class="wrap">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; Airport Transfer</nav>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <span aria-current="page">Airport Transfer</span></nav>
 
   <div class="hero">
     <div>
@@ -360,6 +379,10 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14p
         <p>Yes. A professional driver meets your passengers at Zayed International Airport and helps them settle into the vehicle.</p>
       </details>
       <details>
+        <summary>Is the airport transfer door to door?</summary>
+        <p>Yes. Transfers run directly between Zayed International Airport and your home, office, hotel or work site in Abu Dhabi.</p>
+      </details>
+      <details>
         <summary>How is the pick-up time decided?</summary>
         <p>The pick-up is planned around the flight details you share, so the driver is on time for departures and ready for arrivals.</p>
       </details>
@@ -370,6 +393,10 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14p
       <details>
         <summary>Can you transfer groups, staff or families?</summary>
         <p>Yes. We transfer individual passengers as well as groups travelling together, including company staff, guests and families.</p>
+      </details>
+      <details>
+        <summary>Can I book a bus for a large group airport transfer?</summary>
+        <p>Yes. For larger groups, VHS provides <a class="tl" href="/luxury-bus-rental-travel.html">luxury bus rental for travel</a> with professional drivers and GPS-tracked vehicles, including airport trips. Share your flight details and group size and the team will plan it.</p>
       </details>
       <details>
         <summary>Which areas in Abu Dhabi do you cover?</summary>
@@ -412,13 +439,14 @@ footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14p
         <li><a href="/airport-transfer.html">Airport Transfer UAE</a></li>
         <li><a href="/airport-transfer-abu-dhabi.html">Airport Transfer Abu Dhabi</a></li>
         <li><a href="/airport-transfer-al-jazira.html">Airport Transfer Al Jazira</a></li>
-        <li><a href="/luxury-bus-rental-travel.html">Luxury Bus Rental</a></li>
+        <li><a href="/luxury-bus-rental-travel.html">Luxury Bus Rental for Travel</a></li>
+        <li><a href="/luxury-transportation.html">Luxury Transportation Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="bot">
       <span>&copy; 2026 VHS Passengers Transport. All rights reserved.</span>
-      <span>Last updated: <time datetime="2026-11-13">13 November 2026</time></span>
+      <span>Last updated: <time datetime="2026-11-27">27 November 2026</time></span>
       <span>Abu Dhabi &middot; UAE</span>
     </div>
   </div>
